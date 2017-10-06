@@ -1,0 +1,50 @@
+{dede:include filename="head2.htm"/}<link href="/templets/yc/style/peifu.css"  rel="stylesheet" type="text/css" />
+<div class="body_page_all">
+    <div class="body_page_cont">
+        <div class="yun_main">
+
+            <div class="head_tj" style="margin:0;"></div>
+            <div class="tj_cont">
+                <div class="tj_cont1"><span><a href="/comm/vip" target="_blank">什么是“游戏创业”赔付？</a></span>合作GM赔付申请提交</div>
+                     <form name="form1" id="form1" action="/plus/diy_pf.php" method="POST" onsubmit="return checkdata();" enctype="multipart/form-data" target="_self">
+                        <input type="hidden" name="action" value="post">
+                        <input type="hidden" name="diyid" value="1">
+                        <input type="hidden" name="do" value="2">
+                            <ul>
+                                <li><span><em>*</em> 申请人姓名：</span><input type="text" class="w2" name="sqrmc" id="sqrmc"  value=""><div>请填写真实姓名</div></li>
+                                <li><span><em>*</em> 申请人手机：</span><input type="text" class="w2" name="sqr_name" id="sqr_name" value=""><div>请填写本人手机号码，让我们第一时间联系您</div></li>
+                                
+                                <li><span><em>*</em> 运营游戏名称：</span><input type="text" class="w2" name="jm_name" id="jm_name" value=""><div>请填写正确游戏名 如“王者传奇”</div></li>
+                                <li><span><em>*</em> 套餐购买日期：</span>
+                                    <input name="jm_date" value="" onClick="WdatePicker()" type="text" id="jm_date" style="width:200px" class="intxt WdatePicker">
+							<script language="javascript" type="text/javascript">
+                              Calendar.setup({
+                                  inputField     :    "jm_date",
+                                  ifFormat       :    "%Y-%m-%d %H:%M",
+                                  showsTime      :    true,
+                                  timeFormat     :    "24"
+                              });
+                           </script>
+                                    <div>以支付定金时间为准</div></li>
+                                <li><span><em>*</em> 套餐（实际支付）金额：</span><input type="text" class="w2"  name="jm_money" id="jm_money" value=""><div> 填写购买支付金额</div></li>
+                                <li><span><em>*</em> 问题概述：</span><input type="text" class="w1" name="wqks" id="wqks"><div>不超过50个汉字</div></li>
+                                <li><span><em>*</em> 详细描述：</span><textarea rows="6" cols="65" name="wt_info" id="wt_info"></textarea><div>请您详细描述遇到的问题，申请理由以及期望得到的处理结果，描述文字不超过500个汉字</div></li>   
+                                
+                                
+                            </ul>
+                            <div class="jm_bottom">
+                                  <input type="hidden" name="dede_fields" value="sqrmc,text;sqr_name,text;jm_name,text;jm_date,datetime;jm_money,int;wqks,text;wt_info,multitext">
+                                  <input type="hidden" name="dede_fieldshash" value="ccbf7a6c53c3d4812d728f2e744cdb8c">
+
+                                <input type="checkbox" name="read" checked=""> 我已确认购买的是带“保”的<span><a href="/tc/" target="_blank">游戏一条龙套餐。</a></span><br><br>
+                              <input type="submit" name="submit" class="btn" value="确认提交">
+                      </div>
+                      </form>
+                        </div>
+            
+        </div>
+    </div>
+</div>
+    {dede:include filename="footer_page.htm"/}
+</body>
+</html>

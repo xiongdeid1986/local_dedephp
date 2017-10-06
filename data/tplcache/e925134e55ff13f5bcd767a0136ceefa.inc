@@ -1,0 +1,1 @@
+<option value="[field:price/]">[field:title/]</option>

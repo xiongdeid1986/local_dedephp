@@ -1,0 +1,1 @@
+<div class="col-md-6 col-sm-6 col-xs-12">							<div class="choose-box">								<i class="icon icon-Dollars"></i>								<a href="[field:arcurl/]" target="_blank"><h3>[field:title/]</h3></a>								<p>[field:description function="cn_substr(@me,70)/]......</p>							</div>						</div>

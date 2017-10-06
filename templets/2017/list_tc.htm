@@ -1,0 +1,51 @@
+{dede:include filename="head2.htm"/}
+ <div id="aubodyfrm">
+ {dede:include filename="left.htm"/}
+ <div class="aupageright" style="height:100%;">
+ <div class="tcdiv">
+ <div class="tcfltop"><div class="tj1"></div><a href="/pay"  target="_blank">支持在线付款</a></div>
+ <div class="tclist">
+ <ul>
+{dede:arclist typeid='32' isweight='Y' orderby='weight' row='3' addfields='price' channelid='6'}
+<li><a href="[field:arcurl/]"><img src="[field:litpic /]" alt="[field:title/]" width="239" height="209" border="0" /></a>
+<p><span> <img src="/templets/yc/image/tc_14.jpg"  height="11" width="18" /> 优惠价<b class=nprice>[field:price /]</b> 元</span> <strong>[field:price /]元&nbsp;<font color="#ff202b">[field:title/]</font></strong></p>
+</li>
+{/dede:arclist}
+</ul>
+ </div>
+ <div class="tcfltop"><div class="tj2"></div><a href="/pay"  target="_blank">支持在线付款</a></div>
+ <div class="tclist">
+ <ul>
+{dede:arclist typeid='33' isweight='Y' orderby='weight' row='3' addfields='price' channelid='6'}
+<li><a href="[field:arcurl/]"><img src="[field:litpic /]" alt="[field:title/]" width="239" height="209" border="0" /></a>
+<p><span> <img src="/templets/yc/image/tc_14.jpg"  height="11" width="18" /> 优惠价<b class=nprice>[field:price /]</b> 元</span> <strong>[field:price /]元&nbsp;<font color="#ff202b">[field:title/]</font></strong></p>
+</li>
+{/dede:arclist}
+</ul>
+ </div>
+ <div class="tcfltop"><div class="tj3"></div><a href="/pay"  target="_blank">支持在线付款</a></div>
+ <div class="tclist">
+ <ul>
+{dede:arclist typeid='34' isweight='Y' orderby='weight' row='3' addfields='price' channelid='6'}
+<li><a href="[field:arcurl/]"><img src="[field:litpic /]" alt="[field:title/]" width="239" height="209" border="0" /></a>
+<p><span> <img src="/templets/yc/image/tc_14.jpg"  height="11" width="18" /> 优惠价<b class=nprice>[field:price /]</b> 元</span> <strong>[field:price /]元&nbsp;<font color="#ff202b">[field:title/]</font></strong></p>
+</li>
+{/dede:arclist}
+</ul>
+ </div>
+ </div>
+ <div style="clear:both">
+ <table width="726" border="0" align="center" cellpadding="0" cellspacing="0">
+ <tr>
+ <td colspan="3" valign="top"><table width="98%" border="0" align="center" cellpadding="0" cellspacing="3" bgcolor="#E8EAEE" style="margin:10px 0 10px 0">
+ <tr>
+ <td bgcolor="#F0F1F4" style="line-height:20px;"><ul style="margin:8px;"><ul style="margin: 8px">
+	{dede:field.content/}
+</ul>
+ </ul></td></tr></table></td></tr></table></div>
+ </div>
+ <div class="clear"></div>
+ </div>
+ {dede:include filename="footer.htm"/}
+</body>
+</html>

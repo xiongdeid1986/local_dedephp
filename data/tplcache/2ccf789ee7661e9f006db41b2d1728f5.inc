@@ -1,0 +1,1 @@
+<li><img src="/templets/yc/image/ico_01.gif" /><a href="[field:arcurl/]" title='[field:title/]' target='_blank'>[field:title/] [查看详情]</a></li>

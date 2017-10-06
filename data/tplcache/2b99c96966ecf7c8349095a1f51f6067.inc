@@ -1,0 +1,1 @@
+<div class="col-md-6 col-sm-6 col-xs-12">							<div class="choose-box">								<i class="icon icon-Dollars"></i>								<h3>[field:title/]</h3>								<p>[field:content function="cn_substr(@me,70)/]</p>							</div>						</div>

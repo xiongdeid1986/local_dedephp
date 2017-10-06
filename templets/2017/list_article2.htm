@@ -1,0 +1,31 @@
+{dede:include filename="head2.htm"/}
+<div id="aubodyfrm">
+{dede:include filename="left.htm"/}
+<div class="aupageright">
+<div class="dqwz"><strong>当前位置</strong>: <a href="/index.htmL" >主页</a> > <a href="/Article/" >私服技术</a> > <img  src="/templets/yc/image/sf.gif"  /> 列表 
+<span style="padding-left:95px;">品牌爱信专注于 <a href="/index.htmL"  target="_blank">传奇一条龙</a> <a href="/index.htmL"  target="_blank">新传奇私服一条龙</a> <a href="/index.htmL"  target="_blank">传奇开区一条龙</a></span>
+<div style="clear:both;height:5px; overflow:hidden; width:100%; line-height:0"></div></div>
+
+<div id="aubodypagefrm">
+<!--div class="lbtopmc"><span>·</span><b>新闻列表</b></div-->
+<div class="listdiv" style=" padding-bottom:5px;"> 
+<ul class="autoheight e2">
+{dede:list col='16' titlelen='60' orderby='id'}
+<li><b><a href="[field:arcurl/]"  class="title" alt="[field:title/]">[field:title/]</a></b>
+<span class="info"><small class="rqred">[field:pubdate function=strftime('%Y年%m月%d日',@me)/]</small></span><p class="intro">
+[field:description function="cn_substr(@me,360)"/]
+</p><p class="clear"></p>
+</li>
+{/dede:list}
+</ul></div>
+<ul class="page">
+{dede:pagelist listitem="pre,next"/}
+</ul>
+</div></div></div>
+
+<div class="clear"></div></div>
+{dede:include filename="footer.htm"/}
+</body>
+</html>
+ 
+

@@ -1,0 +1,1 @@
+[field:global name=autoindex runphp='yes']if(@me==0) @me="";[/field:global]<li><a href="[field:typelink/]" title="homepage 1">[field:typename/] 1</a></li>

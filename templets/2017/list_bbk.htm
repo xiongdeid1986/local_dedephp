@@ -1,0 +1,407 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>{dede:field.title/}_{dede:global.cfg_webname/}</title>
+<link href="/favicon.ico" mce_href="/favicon.ico" rel="bookmark" type="image/x-icon" /> 
+<link href="/favicon.ico" mce_href="/favicon.ico" rel="icon" type="image/x-icon" /> 
+<link href="/favicon.ico" mce_href="/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+<meta name="keywords" content="{dede:global.cfg_keywords/}" />
+<meta name="description" content="{dede:global.cfg_description/}" />
+<style type="text/css">
+/*--全局样式--*/
+body {
+	font-size: 14px;
+	line-height: 18px;
+	font-family: Tahoma,Helvetica,Arial,sans-serif;
+background:#ffffff url(/images/Text_in/bg.gif) top repeat-x;
+}
+body, div, p, h1, h2, h3, h4, h5, h6, img, strong, dd, dl, dt, ol, ul, li {
+	margin: 0;
+	padding: 0;
+	border: none;
+	list-style: none;
+	list-style: none;
+}
+input[type="button"] {
+	cursor: pointer;
+}
+img, input, button, text, select {
+	vertical-align: middle;
+}
+.lan{
+	color:#990000
+}
+.hong{
+	color:red
+}
+a {
+	text-decoration: none;
+	color: #990000;
+	cursor:pointer
+}
+a:hover {
+	text-decoration: underline;
+	color: #FF5500;
+}
+.page {
+	width: 1003px;
+	margin: auto;
+}
+.top1 {
+	background: url('/images/Text_in/jiaff32.jpg');
+	height: 298px;
+}
+.main .mt {
+	background: url('/images/Text_in/jiaff35.jpg');
+	height: 157px;
+}
+.main .mc {
+	background: url('/images/Text_in/jiaff37.jpg');
+	height: 100%;
+}
+.main .mb {
+	background: url('/images/Text_in/jiaff38.jpg');
+	height: 42px;
+}
+.box {
+	width: 852px;
+	margin: auto;
+	height: 100%;
+	clear: both;
+}
+.box div {
+	padding: 10px;
+	clear: both;
+	zoom: 1;
+}
+.box h4 {
+	height: 36px;
+	background: url('/images/Text_in/jiaff36.jpg');
+	color: white;
+	font-size: 14px;
+	line-height: 36px;
+	text-indent: 44px;
+	letter-spacing: 1px;
+	clear: both;
+}
+.box p {
+	font-size: 14px;
+	text-indent: 28px;
+	line-height: 25px;
+}
+.box p {
+	font-size: 14px;
+	text-indent: 28px;
+	line-height: 25px;
+	padding: 10;
+}
+.box .rw {
+	clear: both;
+}
+.box p {
+	clear: both;
+}
+.phb {
+	border: 1px #EFEFF1 solid;
+	margin-bottom: 7px;
+	 font-size:12px;
+}
+.phb td {
+	height: 23px;
+	text-indent:10px;
+	border-right: 1px #EFEFF1 solid;
+	border-bottom: 1px #EFEFF1 solid;
+}
+.phb .zhushi td {
+	background: #F0F0F0;
+	border-top: 1px solid #F7F7F7;
+	border-right: 1px solid #F7F7F7;
+	font-weight: bold;
+}
+.phb .pic5 {
+	position: absolute;
+	z-index: 100;
+}
+.jietu {
+ clear:both;display:block; width:100%; border-bottom:1px #E4E4E4 dashed ; height:25px; margin-bottom:5px;
+}
+.jietu strong{
+ width:360px;margin-right:20px;  font-weight:normal; float:left
+}
+.jietu span{
+	 width:400px;float:left;
+}
+.jietu span i{
+	float:left;font-style:normal; width:120px; text-indent:0; font-size:12px;
+}
+.jietu a{
+	display:block;float:left;height:21px; line-height:21px; width:76px;background:url('/images/Text_in/jiaff25.jpg') no-repeat; font-size:12px; margin-right:10px;
+}
+.jietu a:hover{
+	background:url('/images/Text_in/jiaff24.jpg') no-repeat; color:#990000;text-decoration:none
+}
+.banner{
+	width:852px;margin:auto;
+}
+.footer {
+	background: url('/images/Text_in/jiaff22.jpg');
+	height: 158px;
+}
+.span20 {	MARGIN-TOP: 20px
+}
+.style11 {FONT-SIZE: 12px
+}
+.STYLE62 {font-weight: normal; color: #FF0000;}
+.STYLE64 {color: red; font-weight: bold; }
+/* QQ客服 */
+.QQbox{ z-index:99; width: 178px; right: 0; top: 145px; position: absolute;}
+.QQbox .press{ right: 0; border: none; cursor: pointer;width: 33px; height: 158px;position: absolute;}
+.QQbox .Qlist{ left: 0; width: 145px; background: url(../images/Text_in/qq_listbg.gif) repeat-y -155px 0;  position: absolute;}
+.QQbox .Qlist .t,.QQbox .Qlist .b{ float: right; height: 6px; width: 145px; font-size: 1px; }
+.QQbox .Qlist .t{ background: url(../images/Text_in/qq_listbg.gif) no-repeat left; }
+.QQbox .Qlist .b{ background: url(../images/Text_in/qq_listbg.gif) no-repeat right; }
+.QQbox .Qlist .con{ background: #fff; width: 90%; margin: 0 auto; }
+.QQbox .Qlist .con h2{ height: 22px; font: bold 12px/22px "宋体"; background: url(../images/Text_in/qq_listbg.gif) repeat-y -163px 0; border-left: 1px solid #900; text-align: center; color:#fff;}
+.QQbox .Qlist .con ul li{  padding: 5px 0 0 0px;height: 20px; background: #fff;}
+.QQbox .Qlist .con ul li.odd{ background: #fff; }
+/*.QQbox END*/
+.taocan a.tc1399,.taocan a.tc1799,.taocan a.tc2499 {width:240px;height:60px;display:block;background:url(../images/Text_in/taocana.gif) no-repeat;}
+.taocan a.tc1399{background-position:-45px -65px;}
+.taocan a.tc1799{background-position:-45px -127px;}
+.taocan a.tc2499{background-position:-45px -189px;}
+</style>
+<script language='javascript'>
+var t=false;
+setInterval("flash_title()",300);
+function flash_title(){
+if(t){
+document.title='{dede:field.title/}{dede:global.cfg_webname/}';
+t=false;
+}else{
+document.title='~';
+t=true;
+}
+}
+</script>
+
+</head>
+<!--<SCRIPT language=JavaScript>
+function click(e) { 
+if (document.all) { 
+if (event.button==1||event.button==2||event.button==3) { 
+oncontextmenu='return false'; 
+} 
+} 
+if (document.layers) { 
+if (e.which == 1) { 
+oncontextmenu='return false'; 
+} 
+} 
+} 
+if (document.layers) { 
+document.captureEvents(Event.MOUSEDOWN); 
+} 
+document.onmousedown=click; 
+document.oncontextmenu = new Function("return false;") 
+
+var travel=true 
+var hotkey=17 /* hotkey即为热键的键值,是ASII码,这里99代表c键 */ 
+if (document.layers) 
+document.captureEvents(Event.KEYDOWN) 
+function gogo(e) 
+{ if (document.layers) { 
+if (e.which==hotkey&&travel){ 
+alert("本网站禁止一切拷贝.谢谢合作!"); } } 
+else if (document.all){ 
+if (event.keyCode==hotkey&&travel){ alert("本网站禁止一切拷贝.谢谢合作!"); }} 
+} 
+document.onkeydown=gogo </SCRIPT>-->
+<body>
+<div class="page">
+	<div class="header">
+		<div class="top1">
+		</div>
+	</div>
+	<div class="main">
+	  <div class="mt">
+	  </div>
+		<div class="mc">
+			<div class="box">
+				<h4>好的游戏首先要有好的版本，爱信总有一款适合你的游戏版本。-爱信公司12Gm.Com</h4>
+		    <div>
+			 
+			  <table 
+      width="90%" border="0" align="center" cellpadding="0" cellspacing="5" class="top_2px" id="ctl00_DataList1">
+			    <tbody>
+			      <tr>
+			       {dede:arclist row='12'titlelen='40'typeid='3'}
+ <td align="middle"><table cellspacing="1" cellpadding="5" width="100%" bgcolor="#d7d7d7" 
+            border="0">
+			          <tbody>
+			            <tr>
+			              <td class="t1" valign="center" align="middle" bgcolor="#ffffff"><a href="[field:arcurl/]" target="_blank"><img src="/Game/1/[field:id /]/x.jpg" alt="[field:title/]" width="225" height="169" border="0" /></a></td>
+		                </tr>
+			            <tr height="50">
+			              <td style="FONT-SIZE: 14px" align="middle" 
+                  bgcolor="#ffffff"><strong><a href="[field:arcurl/]">[field:title/]</a></strong><br />
+		                  <img 
+                  height="10" src="/images/Text_in/w1.gif" width="5" /><span 
+                  class="t10" style="FONT-SIZE: 12px; COLOR: #900"><a href="http://dlq.12gmcs.net/cs.rar" target="_blank">下载进入游戏上线Gm超爽体验</a></span></td>
+		                </tr>
+		              </tbody>
+			          </table></td>
+ [field:global.autoindex runphp='yes']
+
+if((@me%3) == 0)
+ 
+
+ @me= '</tr><tr>';
+
+ else  @me ='';
+
+    
+
+[/field:global.autoindex]
+
+{/dede:arclist}
+		          </tr>
+
+		        </tbody>
+		      </table>
+			  <p>
+			  </p>
+			  </div>
+		  </div>
+			<div class="box">
+				<h4>2013年网游是不是一个好的创业的项目?-爱信公司12Gm.Com</h4>
+  <div>
+				   
+					<p> <strong>回首过去</strong>: 传奇做为中国最早捕捉闪耀瞬间的第一网游,完美实现了在线人数突破85万的惊人数字,玩家遍布全国.经过岁月的提炼,传奇拥有大批忠实的游戏fans,同时形成了大量团队fans,如家族,社团等。</p>
+					
+					<p> <strong>放眼未来</strong>: 发现传奇作为2D网游界缔造了不可复制的创新如:合击.连击.第四职业.主体与英雄(一人玩双号)等等崭新革命,这些耀眼的辉煌与无法替代的快感,以及华丽招式,开创了2D网游连击时代!
+					</p>
+					<p><strong>我们看下人民网发布的传奇创业成功者的新闻报道 </strong></p>
+
+					<p style="text-align: center">
+					<img src="/images/Text_in/jiaff28.jpg" alt="爱信公司·传奇一条龙·12Gm.Com" width="590" height="428" /></p>
+		  <p><span class="hong"><strong>&quot;做自己的传奇网游&quot;作为您进入创业的起点,&quot;传奇&quot;具有行业成熟,玩家众都,门槛低,迅速致富</strong></span>,等系列优势..</p>
+			  </div>
+			</div>
+			<div class="box">
+				<h4>如何成功的拥有一款传奇游戏并实现商业模式赢利?-爱信公司12Gm.Com</h4>
+		  <div>
+					<p>拥有一款<a href="http://www.12Gm.Com" target="_blank">传奇私服</a>到底要做什么?需要<span class="STYLE64">最基本因素至少有:研发、运营、销售、宣传、品牌等等</span>,这是最基本的因素,可能您听起来比较复杂,但您需要知道,前面说的是以您个人的力量去完成这一款游戏,这个过程确实很复杂,单凭技术这一领域就够您头疼了.那么如此复杂的过程如何让它简单化?您没有技术?不会运营?不会销售?没有关系.智者当借力而行,您自己虽然不会任何技术与运营等等,却有专业的公司帮助您操作,你需要借助专业公司的力量。</p>
+
+
+			  </div>
+			</div>
+
+			<div class="box">
+				<h4>借助专业传奇制作公司爱信公司处理后,您还需要做些什么?-爱信公司12Gm.Com</h4>
+		  <div>
+					<p><span class="hong"><strong>玩<a href="http://www.12Gm.Com" target="_blank">私服</a>您会吗？您是<a href="http://www.12Gm.Com" target="_blank">传奇sf</a>的爱好者吗？如果是那就可以管理您的<a href="http://www.12Gm.Com/idc/">传奇服务器</a>出售装备了</strong></span>，传奇管理员管理服务器只需要在传奇<a href="http://www.12Gm.Com" target="_blank">sf</a>的聊天框输入命令即可管理服务器：例如：[@我要裁决之杖]打完此命令您的包袱里面就有裁决之杖了。[@调级　张三　255级]输入完毕之后张三等级就是255了，这些只是简单的例子，所有的传奇管理都可以用聊天框来实现。其他的技术上的操作：<span class="STYLE64">版本架设、售后维护、开区合区、修改网页、修改登陆器</span>等等,<span class="STYLE64">所有的技术工作都由<a href="http://www.12Gm.Com" target="_blank">爱信</a>网络公司技术部来做</span>，每天9名网络工程师在线等候您的吩咐,您只每天潇洒的聊着QQ,一边卖装备,一边享受至尊无上的GM快感.无拘无束享受2013最新的网游投资乐趣,经过七年品牌爱信公司的处理后你需要做的仅仅是这些。2011年12大新版游戏测试区震撼开启，2011年12大新版游戏测试区震撼开启。</p>
+			  </div>
+			</div>
+		  <div class="box">
+				<h4>你的自己的传奇游戏靠什么赚钱?-爱信公司12Gm.Com</h4>
+		  <div>
+					<p><strong class="hong">销售装备收入：</strong>玩家的装备好坏直接影响到在游戏里面的各种能力，装备好你就在游戏里面称霸一方；</p>
+			<p><strong class="hong">销售等级收入：</strong>玩家的等级也是非常重要的一个环节，销售时价格也很高。建议后期出售；</p>
+			<p><strong class="hong">销售元宝收入：</strong>玩家的日常消耗就需要它,很多网游版本功能也需要它;所以元宝是非常走俏的；</p>
+			<p><strong class="hong">销售属性点收入：</strong>传奇的属性点是控制玩家攻击、魔法、道术等属性的重要依据；</p>
+			<p><strong class="hong">销售会员功能收入：</strong>一般的传奇会员分黄金会员、白金会员、白银会员等等；</p>
+			<p><strong class="hong">销售特殊卷轴及特殊功能收入：</strong>双倍攻击卷轴、双倍经验勋章、双倍速度勋章，GM功能等等；</p>
+			<p>试想：自己的游戏开发可卖的东西可以说是无穷无尽,各种方法手段我想作为网游FANS的您肯定比我们更有把握玩家心态的办法.以上只是一些例子,可以说<span class="STYLE64">能卖的东西还很多.关键是看怎么销售</span>。</p>
+		    </div>
+		  </div></br>
+			<div class="box">
+			  <h4>我们来看看成功的案列与Gm体验的快感吧-爱信公司12Gm.Com</h4>
+		  <div style="height:180px;">
+					<p class="jietu">
+                    <strong>1. Gm与玩家洽谈准备出售装备或元宝</strong>
+                    <span>
+                    <i>点击查看截图<img src="/images/Text_in/jiaff23.gif" width="16" height="16" /></i>
+                    <a href="#">图一</a>
+                    <a href="#">图二</a>
+                    </span>
+            </p>
+	        <p class="jietu">
+              <strong>2. Gm充值平台银行收入,每日自动到帐</strong>
+                  <span>
+                  <i>点击查看截图 <img src="/images/Text_in/jiaff23.gif" width="16" height="16" /></i>
+                  <a href="#">截图一</a><a href="#">截图二</a><a href="#">截图三</a>
+                  </span>
+            </p>
+			<p class="jietu">
+              <strong>3. Gm在正式开区前体验刷装备的快感</strong>
+                <span>
+                <i>点击查看截图 <img src="/images/Text_in/jiaff23.gif" width="16" height="16" /></i>
+                <a href="#">截图一</a><a href="#">截图二</a><a href="#">截图三</a>
+                </span>
+            </p>
+					<p class="jietu">
+                    <strong>4. Gm在正式开区前邀请朋友举行怪物攻城活动</strong>
+                    <span>
+                    <i>点击查看截图 <img src="/images/Text_in/jiaff23.gif" width="16" height="16" /></i>
+                    <a href="#">截图一</a><a href="#">截图二</a><a href="#">截图三</a>
+                    </span>
+                    </p>
+                   <p class="jietu" style="height:52px;">
+                   <strong>5. Gm在与我公司客服人员商讨再开一新区进行赢利</strong><span><i>点击查看截图 <img src="/images/Text_in/jiaff23.gif" width="16" height="16" /></i><a href="#">截图一</a><a href="#">截图二</a><a href="#">截图三</a></span>
+	<br/></p>
+			  </div>
+		  </div>
+			<div class="box">
+				<h4>一些运营商运营几个月以来,如此说道--爱信公司12Gm.Com</h4>
+				<a href="http://www.12Gm.Com/" target="_blank"><img src="/images/Text_in/jiaff30.jpg" alt="爱信公司·传奇一条龙·12Gm.Com" width="244" height="230" style="float:left;display:block; margin-left:15px;" /></a>
+
+<div style="float:left;width:550px; clear:none">
+					<p>"爱信公司(<a href="http://www.12Gm.Com" target="_blank" class="hong">12Gm.Com</a>)个人网游运营，其实并没有投资之前预想的那么复杂和难以运作，爱信给予的支持是全方位的，甚至连首页设计的小细节都会为我们考虑到,并做及时的修整，现在还有爱信投诉系统，如果我对客服不满意，马上可以投诉。"</p>
+					<p>"总站为我们提供的技术支持是全方位的，包括售后、市场、技术、等等相关的支持都是非常到位的，我甚至对电脑都不是很熟悉，在我们的网游开区的这段时间，爱信全程协助，并帮助我们逐步实现初步的盈利，将稳扎稳打的走下去，实现持续性的盈利，目前我已经开了八个自己的网游区，几个不同的版本。"</p>
+					<p>"希望能和更多的传奇朋友和爱信公司(<a href="http://www.12Gm.Com" target="_blank" class="hong">12Gm.Com</a>)共同发展，共同盈利。"</p>
+			  </div>
+		  </div>
+			<div class="box">
+				<h4>为什么一定要选择爱信公司12Gm.Com?--爱信公司12Gm.Com</h4>
+<div>
+					<p>2003年，在中国网络游戏的发展趋势炙手可热之际，酝酿了一年之久的爱信公司(<a href="http://www.12Gm.Com" target="_blank">12Gm.Com</a>)隆重推出了《热血传奇》私人服务器架设一条龙的全新模式，<span class="hong">您无须掌握任何技术、只需要会聊QQ，就可以轻松当上GM管理员，狂赚游戏玩家的钱</span>，所有的后续工作及售后维护都由我们来完成，拥有七年游戏制作经验。此外爱信公司产品、合击辅助工具与游戏引擎早已被众多玩家与Gm使用，在传奇一条龙市场已经成为品牌，为投资者提供了强大的品牌支持做后盾。制作一个自己游戏服务器，用较少的资金投入获得一个属于自己的游戏品牌使用权、经营权，以及<span class="hong">来自爱信公司的各种技术支持与售后服务，比自行投资从事相同业务减少90%的投资和风险！<span class="STYLE64">爱信公司每月将定期推出各种新版本、脚本、功能</span>，<strong>为您的游戏输送新鲜血液</strong>，</span>让您投资无忧，背靠大树好乘凉。</p>
+			  </div>
+		  </div>
+			<div class="box">
+				<h4>我非常有兴趣,我如何联系你们开始创业?-爱信公司12Gm.Com</h4>
+		  <div style="clear: none; width:520px; float:left">
+					<p>请通过您<span class="lan">客服部咨询服务QQ及电话</span>我们的客服会在第一时间答复您，为您解答疑问！记住只要会玩传奇就能开自己的游戏。只需要选择以下任意一款套餐即刻开始投资！<span class="hong">右边是我们为您准备的3款套餐</span>。我们精心准备的这套精致完整的网游投资计划，只为帮助有准备，有胆识，有计划抢占先机，具有卓越目光的<span class="box">人！机遇也许会再次出现，当它与您再次擦肩而过时，那是一种遗憾。点击右边的图片直接查看套餐的详细内容！您可以参照以下流程来开始投资：<br />
+                      <span class="STYLE62"><strong>　</strong>选版本→找客服→定套餐→汇定金→测游戏→改细节→汇余款→上广告→售装备。</span></span></p>
+		    <p style="text-indent:0"><a href="http://www.12Gm.Com/" target="_blank"><strong style="color:green; text-decoration:underline">点击这里立刻进入爱信公司·12Gm.Com官方网站 
+					即刻开始创业&gt;&gt;</strong></a><a href="http://www.12Gm.Com" target="_blank"><strong style="color:green; text-decoration:underline">&gt;</strong></a></p>
+			  </div>
+<div style="width:290px;clear:none;float: right">
+{dede:arclist row='6' titlelen='30' typeid='1' orderby='id' orderway='asc'}
+<A href="[field:arcurl/]" ><IMG alt="[field:title/]" src="/tc/tc_0[field:global.autoindex/].gif"  border=0></A><BR>
+{/dede:arclist}
+</div>
+		  </div>
+	  <div class="box">
+				<h4>客服联系方式-爱信公司12Gm.Com（点击客服号码咨询需要加好友后才能发起会话）</h4>
+	    <div>
+	      <table class="table" cellspacing="0" cellpadding="0" width="820px" align="center" border="0" style=" margin:auto">
+	        <tr>
+	          <td style="PADDING-TOP: 3px; width: 228px;"><span> <a href="tencent://message/?uin={dede:global.qqa/}&amp;Site=爱信公司&amp;Menu=yes"> <img height="23" src="/images/Text_in/jiaff0.gif" width="74" border="0" /></a>&nbsp; <span style="PADDING-TOP: 3px; width: 228px; height: 31px;">爱信_</span>客服1 <span style="PADDING-TOP: 3px; width: 228px; height: 31px;">QQ</span>:<a href="tencent://message/?uin={dede:global.qqa/}&amp;">{dede:global.qqa/}</a></span></td>
+	          <td style="PADDING-TOP: 3px; width: 228px;"><a href="tencent://message/?uin={dede:global.qqb/}&amp;Site=爱信公司&amp;Menu=yes"><img height="23" src="/images/Text_in/jiaff0.gif" width="74" border="0" /></a>&nbsp;<span style="PADDING-TOP: 3px; width: 228px; height: 31px;">爱信_</span>客服2 <span style="PADDING-TOP: 3px; width: 228px; height: 31px;">QQ</span>:<a href="tencent://message/?uin={dede:global.qqb/}&amp;">{dede:global.qqb/}</a></td>
+	          <td style="PADDING-TOP: 3px; width: 228px; height: 31px;"><a href="tencent://message/?uin={dede:global.qqg/}&amp;Site=爱信公司&amp;Menu=yes"><img height="23" src="/images/Text_in/jiaff0.gif" width="74" border="0" /></a>&nbsp; 
+	            爱信主管 QQ:<a href="tencent://message/?uin={dede:global.qqg/}&amp;">{dede:global.qqg/}</a></td>
+            </tr>
+          </table>
+	    </div>
+		  </div><script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fb021cc3a5da402bb4d8bbc5e19f93ea1' type='text/javascript'%3E%3C/script%3E"));
+</script>		  <div class="nav" style="text-align:center; padding-top:8px; width:852px; margin:auto; border-top:1px solid #CCCCCC; font-size:14px;"><span class="fontbx12"><a href="/">爱信公司</a> | <a href="/game">精品版本</a> | <a href="/Cooperation">合作流程</a> | <a href="/remit.html" target="_blank">公司介绍</a> | <a href="/pay" target="_blank">汇款方式</a> | <a href="/plus/guestbook.php">留言反馈</a> | <a href="/idc" target="_blank">主机租用</a> | <a href="/tc">一条龙套餐</a> | <a href="/AD">广告代理</a> | <a href="/comm/CustomerService">帮助中心</a> | <a href="/comm/daili">加盟代理</a></span><br></div>
+	  </div>
+		<div class="mb">
+		</div>
+	</div>
+  <div class="footer"></div>
+</div>
+</body>
+</html>

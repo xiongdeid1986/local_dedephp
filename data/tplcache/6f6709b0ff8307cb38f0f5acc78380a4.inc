@@ -1,0 +1,1 @@
+<div class="item active">								<div class="testi-content">									<span><i class="fa fa-quote-left"></i>aaa<i class="fa fa-quote-right"></i></span>									<p>[field:msg/]</p>									<h4><b>david shapherd</b> Founder, KingsGate</h4>								</div>							</div>

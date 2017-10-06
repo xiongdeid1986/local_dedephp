@@ -1,0 +1,1 @@
+{dede:php}if($n == 0){echo "ok";}{/dede:php}<li><a href="[field:typelink/]" title="homepage 1">[field:typename/] 1</a></li>

@@ -1,0 +1,40 @@
+{dede:include filename="head2.htm"/}
+
+<div id="aubodyfrm">
+{dede:include filename="left.htm"/}
+<div class="aupageright">
+<div id="aubodypagefrm">
+<!-- 去掉版本头部介绍性文字 新增版本分类 -->
+<!-- div style="padding: 5px; font-weight: bold">
+<script language="JavaScript" src="/Scripts/stm31.js"></script>
+<script language="JavaScript" src="/Scripts/Menu.js"></script>
+</div -->
+
+<div  class="bbnav">
+<p>游戏分类><span>               
+<a href="../" class="dqbbhover">所有产品</a>&nbsp;&nbsp;{dede:channel type='son' row='10'}      <a href="[field:typeurl /]">[field:typename/]</a>&nbsp;{/dede:channel}</span></p></div>
+<div id="aubodycomm">
+<img src="/templets/yc/image/list{dede:type}[field:topID /]{/dede:type}.gif" border="0" width="725" style="max-height:50px" /> 
+{dede:list pagesize='27' titlelen='20' orderby='id'}
+<div class="inner">
+<a href="[field:arcurl/]"  ><img src="[field:litpic /]" alt='[field:title/]' /></a>
+<div><a  href="[field:arcurl/]"   >[field:title/]&nbsp;<span style="color:red">售价:[field:price/]</span></a></div>
+</div>
+[field:global.autoindex runphp='yes']
+if((@me%3) == 0)
+ @me= '';
+ else  @me ='';
+[/field:global.autoindex]
+{/dede:list}
+</div>
+
+<div class="pagecut">
+<div class="page"><a>点击翻页按钮跳转下一页:</a>{dede:pagelist listitem="pre,next"/}
+</div>
+</div></div></div>
+
+<div class="clear"></div></div>
+{dede:include filename="footer.htm"/}
+
+</body>
+</html>

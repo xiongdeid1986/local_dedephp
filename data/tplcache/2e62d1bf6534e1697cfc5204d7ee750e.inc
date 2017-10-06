@@ -1,0 +1,1 @@
+<a href='[field:typeurl/]' target="_blank">[field:title/]</a>[field:global.autoindex runphp='yes']if((@me) == 2) @me= '<br/>'; else  @me ='';[/field:global.autoindex]

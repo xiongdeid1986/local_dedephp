@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]> <html class="ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--><html lang="en" class=""><!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+	<title>{dede:global.cfg_webname /}_{dede:field.seotitle /}</title>
+
+	<!-- Standard Favicon -->
+	<link rel="icon" type="image/x-icon" href="images//favicon.ico" />
+	
+	<!-- For iPhone 4 Retina display: -->
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="images//apple-touch-icon-114x114-precomposed.png">
+	
+	<!-- For iPad: -->
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="images//apple-touch-icon-72x72-precomposed.png">
+	
+	<!-- For iPhone: -->
+	<link rel="apple-touch-icon-precomposed" href="images//apple-touch-icon-57x57-precomposed.png">	
+	
+	<!-- Library - Google Font Familys -->	
+
+	<link rel="stylesheet" type="text/css" href="{dede:global.cfg_templets_skin/}/libraries/lightslider/lightslider.min.css" />
+	
+	<link rel="stylesheet" type="text/css" href="{dede:global.cfg_templets_skin/}/revolution/css/settings.css">
+ 
+	<!-- RS5.0 Layers and Navigation Styles -->
+	<link rel="stylesheet" type="text/css" href="{dede:global.cfg_templets_skin/}/revolution/css/layers.css">
+	<link rel="stylesheet" type="text/css" href="{dede:global.cfg_templets_skin/}/revolution/css/navigation.css">
+	
+	
+	<!-- Library - Bootstrap v3.3.5 -->
+    <link rel="stylesheet" type="text/css" href="{dede:global.cfg_templets_skin/}/libraries/lib.css">
+	
+	<!-- Custom - Theme CSS -->
+	<link rel="stylesheet" type="text/css" href="{dede:global.cfg_templets_skin/}/style.css">	
+	<link rel="stylesheet" type="text/css" href="{dede:global.cfg_templets_skin/}/css/plugins.css">
+	<link rel="stylesheet" type="text/css" href="{dede:global.cfg_templets_skin/}/css/navigation-menu.css">
+	<link rel="stylesheet" type="text/css" href="{dede:global.cfg_templets_skin/}/css/shortcode.css">
+	
+	<!--[if lt IE 9]>
+		<script src="{dede:global.cfg_templets_skin/}/js/html5/respond.min.js"></script>
+    <![endif]-->
+	
+</head>
+
+<body data-offset="200" data-spy="scroll" data-target=".ow-navigation">
+	<div class="main-container">
+		
+		<!-- Header Section -->
+		<header id="header" class="header-section container-fluid no-padding">
+			<!-- Container -->
+			<div class="container">
+				<!-- Top Header -->
+				<div class="top-header container-fluid no-padding">
+					<div class="col-md-8 col-sm-12 col-xs-12 top-icons no-padding">
+						<a href="http://wpa.qq.com/msgrd?v=3&uin={dede:global.qqa/}&site=qq&menu=yes" target="_blank"><img src="{dede:global.cfg_templets_skin/}/images/qq-ic.png" alt="业务QQ" /><span>业务QQ</span><b>{dede:global.qqa/}</b></a>
+						<a href="http://wpa.qq.com/msgrd?v=3&uin={dede:global.qqb/}&site=qq&menu=yes" target="_blank"><img src="{dede:global.cfg_templets_skin/}/images/qq-ic.png" alt="业务QQ" /><span>业务QQ</span><b>{dede:global.qqb/}</b></a>
+						<a href="javascript:;"><img src="{dede:global.cfg_templets_skin/}/images/phone-ic.png" alt="Phone" /><span>售后电话</span><b>86 138-5256-927</b></a>
+						<a href="/plus/guestbook.php" target="_blank"><img src="{dede:global.cfg_templets_skin/}/images/chat-ic.png" alt="留言评价" /><span>用户</span><b>留言评价</b></a>
+						
+						<ul>
+							<li><a href="javascript:;" title="{dede:global.cfg_indexname/}微信平台"><i class="fa fa-weixin"></i></a></li>
+						</ul>
+					</div>
+				</div><!-- Top Header /- -->		
+				<!-- nav -->
+				<nav class="navbar navbar-default ow-navigation">
+					<div class="navbar-header">
+						<button aria-controls="navbar" aria-expanded="false" data-target="#navbar" data-toggle="collapse" class="navbar-toggle collapsed" type="button">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<a href="index.html" class="navbar-brand"><img src="{dede:global.cfg_templets_skin/}/images/logo.png" alt="Logo" /></a>
+					</div>
+					<!-- Menu Icon -->
+					<div class="menu-icon">
+						<div class="search">	
+							<a href="#" id="search" title="Search"><img src="{dede:global.cfg_templets_skin/}/images/search-ic.png" alt="Search" /></a>
+						</div>
+					</div><!-- Menu Icon /- -->
+					<div class="navbar-collapse collapse navbar-right" id="navbar">
+						<ul class="nav navbar-nav">
+							<li class="active dropdown">
+								<a href="/" title="Home" class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false">首页</a>
+								<i class="ddl-switch fa fa-angle-down"></i>
+							</li>
+						{dede:channelartlist typeid='top' row='7'}
+							<li class="dropdown">
+								<a href="{dede:field name='typeurl'/}" title="Home" class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false">{dede:field name='typename'/}</a>
+								<i class="ddl-switch fa fa-angle-down"></i>
+								<ul class="dropdown-menu">
+									{dede:channel type='son'}<li><a href="[field:typelink/]" title="homepage 1">[field:typename/]</a></li>{/dede:channel}
+								</ul>
+							</li>
+						{/dede:channelartlist}
+						</ul>
+					</div><!--/.nav-collapse -->
+					<script type="text/javascript">
+						var navigations = document.getElementById('navbar').getElementsByTagName('a');
+						var url = RegUrl(window.location.href);
+						var e=null;
+						for(var i=0;i<navigations.length-1;i++){
+							var href = RegUrl(navigations[i].href);
+							if(href == url){
+								e = getParentEle(navigations[i]);
+							}
+						}
+						function getParentEle(e){
+							var navigations = document.getElementById('navbar');
+						
+						}
+						function RegUrl(u){
+							u = u.replace(/.+?\/\//,'');
+							u = u.replace(/.+?\//,'/');
+							return u;
+						}
+					</script>
+				</nav><!-- nav /- -->
+				<!-- Search Box -->
+				<div class="search-box">
+					<span><i class="icon_close"></i></span>
+					<form action="/plus/search.php" method="post" class="search-form">
+			          <input class="form-control" name="keyword" value="输入版本名或套餐..." onblur="if(this.value=='') this.value='输入版本名或套餐...';" onfocus="if(this.value=='输入版本名或套餐...') this.value='';" type="text">
+			        </form>
+				</div><!-- Search Box /- -->
+			</div><!-- Container /- -->		
+		</header><!-- Header Section /- -->
+	<main>

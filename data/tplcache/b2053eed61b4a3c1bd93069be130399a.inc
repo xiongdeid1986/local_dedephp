@@ -1,0 +1,1 @@
+<div class="item [field:global name=autoindex runphp='yes'](@me==1)? @me='active':@me='';[/field:global]">								<div class="testi-content">									<span><i class="fa fa-quote-left"></i><i class="fa fa-quote-right"></i></span>									<p>[field:msg/]</p>									<h4><b>david shapherd</b> Founder, KingsGate</h4>								</div>							</div>

@@ -1,0 +1,720 @@
+<html><!DOCTYPE html PUBliC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<meta http-equiv="x-ua-compatible" content="ie=7" />
+
+<title>{dede:field.title/}_{dede:global.cfg_webname/}</title>
+
+<link href="/favicon.ico" mce_href="/favicon.ico" rel="bookmark" type="image/x-icon" /> 
+
+<link href="/favicon.ico" mce_href="/favicon.ico" rel="icon" type="image/x-icon" /> 
+
+<link href="/favicon.ico" mce_href="/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+
+<meta name="keywords" content="{dede:field name='keywords'/}">
+
+<meta name="description" content="{dede:field name='description' function='html2text(@me)'/}">
+
+<link href="/images/global.css"  rel="stylesheet" type="text/css" />
+
+<link href="/images/gdc_style.css"  rel="stylesheet" type="text/css" />
+
+	<script type="text/javascript" src="/images/jquery.js" ></script> 
+
+	<script type="text/javascript"> 
+
+$(document).ready(function(){
+
+	$("#nav-one li").hover(
+
+		function(){ $("ul", this).fadeIn("fast"); }, 
+
+		function() { } 
+
+	);
+
+	if (document.all) {
+
+		$("#nav-one li").hoverClass ("sfHover");
+
+	}
+
+});
+
+
+
+$.fn.hoverClass = function(c) {
+
+	return this.each(function(){
+
+		$(this).hover( 
+
+			function() { $(this).addClass(c);  },
+
+			function() { $(this).removeClass(c); }
+
+		);
+
+	});
+
+};	
+
+/* 
+
+Code Highlighting 
+
+Courtesy of Dean Edwards star-light 
+
+http://dean.edwards.name/my/behaviors/#star-light.htc
+
+	- with jQuery methods added, of course
+
+*/	</script><script language='javascript'>
+
+var t=false;
+
+setInterval("flash_title()",300);
+
+function flash_title(){
+
+if(t){
+
+document.title='{dede:field.title/}{dede:global.cfg_webname/}';
+
+t=false;
+
+}else{
+
+document.title='~';
+
+t=true;
+
+}
+
+}
+
+</script>
+
+
+
+</head>
+
+<!--<SCRIPT language=JavaScript>
+
+function click(e) { 
+
+if (document.all) { 
+
+if (event.button==1||event.button==2||event.button==3) { 
+
+oncontextmenu='return false'; 
+
+} 
+
+} 
+
+if (document.layers) { 
+
+if (e.which == 1) { 
+
+oncontextmenu='return false'; 
+
+} 
+
+} 
+
+} 
+
+if (document.layers) { 
+
+document.captureEvents(Event.MOUSEDOWN); 
+
+} 
+
+document.onmousedown=click; 
+
+document.oncontextmenu = new Function("return false;") 
+
+
+
+var travel=true 
+
+var hotkey=17 /* hotkey即为热键的键值,是ASII码,这里99代表c键 */ 
+
+if (document.layers) 
+
+document.captureEvents(Event.KEYDOWN) 
+
+function gogo(e) 
+
+{ if (document.layers) { 
+
+if (e.which==hotkey&&travel){ 
+
+alert("本网站禁止一切拷贝.谢谢合作!"); } } 
+
+else if (document.all){ 
+
+if (event.keyCode==hotkey&&travel){ alert("本网站禁止一切拷贝.谢谢合作!"); }} 
+
+} 
+
+document.onkeydown=gogo </SCRIPT>-->
+
+<body>
+
+<style>
+
+</style>
+
+<div class="Head">
+
+  <a href="{dede:global.cfg_basehost/}/idc/index.html" ><img class="L-logo" src="/images/gdc_logo.gif"  alt="传奇服务器_传奇服务器_主机租用logo"></a>
+
+	<div class="R_nav_box">
+
+		<div class="Nav_help">
+
+			<a href="#"><img src="/images/zun_001.gif"  alt="旧版页面"></a><a href="/down/index.html"  target="_blank"><img src="/images/zun_002.gif"  alt="资源总站"></a><a href="#"><img src="/images/zun_004.gif"  alt="官方博客"></a><a href="/tc/index.html"  target="_blank"><img src="/images/zun_003.gif"  alt="网站地图"></a>
+
+                        
+
+		</div>
+
+	</div>
+
+
+
+	
+
+
+
+	
+
+	<div class="Nav_box">
+
+		<div class="r"></div>
+
+		<div class="l"></div>
+
+		<div class="game_img"></div>
+
+			
+
+	
+
+		<ul id="nav-one" class="nav"> 
+
+		 <li><a href="/index.htmL" ><span>首页</span></a></li>
+
+			  <ul class="ejcd">
+
+					<li><a href="/index.htmL" >爱信官网首页</a></li>
+
+					<li><a href="index.html" >服务器首页</a></li>
+
+				</ul>
+
+ 
+
+			  </li>
+
+		      <li><a href="/tc/index.html"  ><span>一条龙套餐</span></a></li>  
+
+			  <li><a href="/Game/index.html" ><span>游戏版本</span></a></li>
+
+			  <li><a href="/Ad/index.html" ><span>广告代理</span></a></li>		
+
+			  <li></li>
+
+
+
+			  <li><a href="/web/index.html"  ><span>建站模版</span></a></li>
+
+			  <li><a href="/dlq/index.html" ><span>登录器类</span></a></li>
+
+			  <li ><a href="index.html"  ><span>主机租用</span></a></li>
+
+			  <li ><a href="/Article/index.html"  ><span>私服技术</span></a></li>
+
+			  <li><a href="/qna.html" ><span>客户问答</span></a></li>
+
+			  <li><a href="/remit.html"  ><span>公司简介</span></a></li>
+
+</ul>
+
+		 
+
+	</div>
+
+
+
+</div>
+
+<div class="clearfix"></div><div class="wrap">
+
+  <img src="/images/idc.jpg" width="950" height="270"></div>
+
+<div class="clearfix"></div><div class="wrap">
+
+	<div class="lbox">
+
+
+
+		<div class="trusteeship">
+
+			<h2>爱信·高端服务器租用</h2>
+
+			<img src="/images/gdc_015.gif"  class="tr_img"  alt="高端服务器">
+
+			<div class="Info">
+
+				<table width="28%" border="0" cellpadding="2" cellspacing="2" style="float: right;">
+
+  <tr>
+
+    <td><img src="/images/oao_029.gif"  width="121" height="102" class="img"  alt="机房图片"/></td>
+
+  </tr>
+
+
+
+  <tr>
+
+    <td height="30" align="center"><a href="guonei.html" ><img src="/images/gdc_024.gif"  alt="更多机房信息" border="0"></a></td>
+
+  </tr>
+
+</table>　　福建电信IDC数据中心，2011年为中国电信划分专属vip区域组建的精品段。32G硬件防火墙保障，40G出口核心带宽直连CHINANET骨干网。全国最高性比价服务器等您来拿！<br />
+
+<p>
+
+租用价格：<span class="f_red_18">600</span>元/月<br />
+
+机房：福建·莆田电信机房<br />
+
+
+
+配置：E5200 2G内存 10M独享带宽<br />
+
+适用群体：传奇开区、资源软件、游戏站与各类高防项目。</p>
+
+<img src="/images/gdc_023.gif"  class="img2" alt="本期主推">
+
+			</div>
+
+		</div>
+
+		<div class="lbox T_margin8">
+
+			<div class="title_t">
+
+				<div class="r"></div>
+
+				<div class="l"></div>
+
+
+
+				<h2>服务器详细配置与介绍</h2>
+
+			</div>
+
+			<div class="con_box">
+
+			
+
+			<div class="pro_con2"><div class="rcon">	品牌[百万投资]骨干防火墙群集体系·配备完整的制冷、防尘、消防系统·上千台客户服务器、上万个信赖用户·40G ChinaNet骨干网络光纤线路直连·国内独家千M级骨干硬件防火墙集群·免费提供服务器群集尖端技术支持！</div>
+
+					<div class="t">
+
+						<ul>
+
+							<li>·CPU：酷睿四核E5200</li>
+
+
+
+							<li>·内存：2G DDRII 800 </li>
+
+							<li>·硬盘：500GB SATAII</li>
+
+							<li>·机房：福建·莆田电信</li> 
+
+						</ul> 
+
+				  </div>
+
+					<div class="clearfix"></div>
+
+					<div class="m_Num">独享<span class="f_red_18">10M</span>宽带 <span class="f_red_18">32G</span>硬防 <span class="f_red_18">600</span>元/月</div>
+
+
+
+			  </div><div class="pro_con"><img src="/images/gdc_005.gif"  class="cooperate" alt="爱信A"/>
+
+					<div class="t">
+
+						<ul>
+
+							<li>·Intel酷睿双核E2180</li>
+
+							<li>·内存：1G DDRII 800 </li>
+
+							<li>·硬盘：80G SATAII</li>
+
+							<li>·机房：莆田,东莞,镇江,安徽</li>
+
+
+
+						</ul> 
+
+					</div>
+
+					<div class="clearfix"></div>
+
+					<div class="m_Num">独享<span class="f_red_18">10M</span>宽带 <span class="f_red_18">32G</span>硬防 ￥<span class="f_red_18">500</span>元/月</div>
+
+					<div class="mimg_Num"> <a href="guonei.html" ><img src="/images/oao_072.gif"  border="0" alt="详细介绍" /></a> <a href="zhifu.html" ><img src="/images/zun_171.gif"  border="0"   alt="立即购买" /></a></div>
+
+		  </div><div class="pro_con"><img src="/images/gdc_006.gif"  class="cooperate" alt="爱信B"/>
+
+
+
+					<div class="t">
+
+						<ul>
+
+							<li>·Intel酷睿双核E5200</li>
+
+							<li>·内存：2G DDRII 800 </li>
+
+							<li>·硬盘：80G SATAII</li>
+
+							<li>·机房：莆田,东莞,镇江,安徽</li>
+
+						</ul> 
+
+			</div>
+
+
+
+					<div class="clearfix"></div>
+
+					<div class="m_Num">独享<span class="f_red_18">10M</span>宽带 <span class="f_red_18">32G</span>硬防 ￥<span class="f_red_18">650</span>元/月</div>
+
+                    <div class="mimg_Num"> <a href="guonei.html" ><img src="/images/oao_072.gif"  border="0"  alt="详细介绍"  /></a> <a href="zhifu.html" ><img src="/images/zun_171.gif"  border="0" alt="立即购买"/></a></div>
+
+		  </div><div class="pro_con"><img src="/images/gdc_007.gif"  class="cooperate" alt="爱信_C"/>
+
+					<div class="t">
+
+
+
+						<ul>
+
+							<li>·Intel酷睿四核E5300</li>
+
+							<li>·内存：2G DDRII 800</li>
+
+							<li>·硬盘：80G SATAII</li>
+
+							<li>·机房：莆田,东莞,镇江,安徽</li>
+
+						</ul> 
+
+			</div>
+
+
+
+					<div class="clearfix"></div>
+
+					<div class="m_Num">独享<span class="f_red_18">10M</span>宽带 <span class="f_red_18">32G</span>硬防 ￥<span class="f_red_18">700</span>元/月</div>
+
+                    <div class="mimg_Num"> <a href="guonei.html" ><img src="/images/oao_072.gif"  border="0"  alt="详细介绍"  /></a> <a href="zhifu.html" ><img src="/images/zun_171.gif"  border="0" alt="立即购买"/></a></div>
+
+		  </div><div class="pro_con"><img src="/images/gdc_008.gif"  class="cooperate" alt="爱信_D"/>
+
+					<div class="t">
+
+
+
+						<ul>
+
+							<li>·Intel酷睿四核E6300</li>
+
+							<li>·内存：4G DDRII 800</li>
+
+							<li>·硬盘：80G SATAII</li>
+
+							<li>·机房：东莞,镇江,安徽</li>
+
+						</ul> 
+
+			</div>
+
+
+
+					<div class="clearfix"></div>
+
+					<div class="m_Num">独享<span class="f_red_18">20M</span>宽带 <span class="f_red_18">32G</span>硬防 ￥<span class="f_red_18">900</span>元/月</div>
+
+                    <div class="mimg_Num"> <a href="guonei.html" ><img src="/images/oao_072.gif"  border="0"  alt="详细介绍"  /></a> <a href="zhifu.html" ><img src="/images/zun_171.gif"  border="0" alt="立即购买"/></a></div>
+
+		  </div><div class="clearfix"></div><center class="T_margin8"><a href="guonei.html" ><img src="/images/gdc_003.gif"  alt="更多网游专用型"/></a>
+
+			  </center>
+
+
+
+			</div>
+
+		</div>
+
+		<div class="lbox T_margin8">
+
+			<div class="safety_t">
+
+				<div class="r"></div>
+
+				<div class="l"></div>
+
+			</div>
+
+			<div class="safety_c">
+
+			
+
+				<div class="safety_con">
+
+
+
+					<img src="/images/gdc_010.gif"  class="lo" alt="安全防护" />
+
+					<div class="txt">
+
+						<h3><a href="fanghu.html" ><img src="/images/gdc_009.gif"  /></a></h3>
+
+　　核心骨干网络的防护——布署千M级集群防护能力防火墙与搭配CISCO顶级路由设备与自我防御体系
+
+布署有国内最顶级的超高标准集群防护区域。在骨干网处布署的高级安全策略与虚拟独享的流量策略并
+
+在其核心层布署，能满足客户超高的防护标准与高质量的网络安全稳定 [<a href="fanghu.html" >详细介绍</a>]
+
+
+
+					</div>
+
+					<div class="clearfix"></div></div>
+
+				<center><img src="/images/gdc_011.gif"  alt="爱信安全防护流程图"/>
+
+				</center>
+
+			</div>
+
+			<div class="safety_b">
+
+
+
+				<div class="r"></div>
+
+				<div class="l"></div>
+
+			</div>
+
+			<div class="clearfix"></div></div>
+
+		</div>
+
+	<div class="rbox">
+
+			<div class="Box_report"><div class="rep_title2">
+
+				<div class="r"></div>
+
+				<div class="l"></div>
+
+
+
+				<span class="Name2">客户中心</span>
+
+			</div>
+
+			<div class="box kf">
+
+				{dede:include filename="idcqq.htm"/} 			</div>	
+
+		</div><div class="Box_report T_margin8"><div class="rep_title">
+
+				<div class="r"></div>
+
+				<div class="l"></div>
+
+				<span class="Name">典型客户</span>
+
+
+
+			</div>
+
+			<div class="box wrapfix">
+
+			
+
+			<div class="report_b">
+
+				<img src="/images/oao_030_a.gif"  align="absmiddle" alt="爱信公司">
+
+				<h4>中国CG网</h4>
+
+			</div>
+
+			<div class="report_b">
+
+
+
+				<a href="http://www.12Gm.Com/"  target="_blank">
+
+				<img src="/images/oao_030_b.gif"  align="absmiddle" alt="爱信公司"></a>
+
+				<h4>5288游戏</h4>
+
+			</div>
+
+			<div class="report_b">
+
+				<a href="/index.htmL"  target="_blank">
+
+				<img src="/images/oao_030.gif"  align="absmiddle" alt="品牌爱信"></a>
+
+				<h4>朗科科技</h4>
+
+
+
+		  </div>
+
+			</div></div><div class="hezuo">
+
+		<ul>
+
+		<li><a href="http://www.laofengxiang.com/"  target="_blank"><strong>老凤祥</strong></a></li>
+
+		<li><a href="http://www.baidu.com/"  target="_blank"><strong>百度</strong></a></li>
+
+		</ul>
+
+		</div>
+
+
+
+		<div class="Box_report T_margin8"><div class="rep_title">
+
+				<div class="r"></div>
+
+				<div class="l"></div>
+
+				<span class="Name">机房数据中心</span>
+
+			</div>
+
+		  <div class="box padding_bottom10">
+
+			<div class="aboutimg">				<div class="pb">				  <img src="/images/idc.gif"  alt="数据中心" width="180" height="117" align="absmiddle">				</div>
+
+
+
+			</div>
+
+		    <img src="/images/oao_026.gif"  align="absmiddle" class="p_icp" alt="公司资质">			</div>	
+
+		</div>
+
+	</div>
+
+<div class="clearfix"></div><div class="link">
+
+	<div class="lt">
+
+		<div class="r"></div>
+
+		<div class="l"></div>
+
+		<h2>合作伙伴</h2>
+
+
+
+	</div>
+
+	<div class="lc">
+
+		<ul>
+
+			<li><img src="/images/cooperate_logo_01.gif"  align="absmiddle" /></li>
+
+			<li><img src="/images/cooperate_logo_02.gif"  align="absmiddle" /></li>
+
+			<li><img src="/images/cooperate_logo_03.gif"  align="absmiddle" /></li>
+
+			<li><img src="/images/cooperate_logo_04.gif"  align="absmiddle" /></li>
+
+			<li><img src="/images/cooperate_logo_07.gif"  align="absmiddle" /></li>
+
+			<li><img src="/images/cooperate_logo_05.gif"  align="absmiddle" /></li>
+
+			<li><img src="/images/cooperate_logo_06.gif"  align="absmiddle" /></li>
+
+			<li><img src="/images/cooperate_logo_09.gif"  align="absmiddle" /></li>
+
+	</ul>
+
+	<div class="clearfix"></div></div>
+
+	<div class="lb">
+
+	<div class="r"></div>
+
+	<div class="l"></div>
+
+	</div>
+
+
+
+</div>
+
+<div class="clearfix"></div><div class="Footer wrapfix">
+
+<div class="con">
+
+<a href="/Article/index.html"  target="_blank">私服技术</a> <strong>|</strong>
+
+<a href="/down/index.html"  target="_blank">软件下载</a> <strong>|</strong>
+
+<a href="/index.htmL" >网通镜像</a> <strong>|</strong>
+
+<a href="/plus/guestbook.php" >你问我答</a> <strong>|</strong>
+
+<a href="/tc/index.html"  target="_blank">开区流程</a><strong> |</strong>
+
+<a href="/tc/index.html"  target="_blank">网站地图</a><strong> |</strong>
+
+<script type="text/javascript">var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cscript src=" + _bdhmProtocol + "hm.baidu.com/h.js%3Ff019449d79b9b651e2fb467c16c126e7' type='text/javascript'%3E%3C/script%3E"));</script><br />
+
+
+
+九年品牌·爱信· 版权所有 FuJian 12Gm.Com Network Technology CO,.LTD 7*12服务<br />
+
+热门标签: 
+
+<a href="/index.htmL" >传奇一条龙</a>
+
+<a href="/index.htmL" >新传奇私服一条龙</a> 
+
+<a href="/index.htmL" >传奇开区一条龙</a></div>
+
+</div></div>
+
+</body>
+
+</html>
+

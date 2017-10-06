@@ -1,0 +1,1 @@
+[field:global name=autoindex runphp='yes'](@me==0) ? @me='<ul class="dropdown-menu">' : @me='';<li><a href="[field:typelink/]" title="homepage 1">[field:typename/] 1</a></li>(@me==0) ? @me='</ul>' : @me='';[/field:global]

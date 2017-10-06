@@ -1,0 +1,145 @@
+	</main>
+		<!-- Footer Section -->
+		<footer class="footer-main container-fluid no-padding">
+			<!-- Container -->
+			<div class="container">
+				<div class="logo-block col-md-12 col-sm-12 col-xs-12 no-padding">
+					<a href="#" title="Logo"><img src="{dede:global.cfg_templets_skin/}/images/ftr-logo.png" alt="Logo" /></a>
+				</div>
+				<div class="row">
+					<div class="col-md-3 col-sm-6 col-xs-6">
+						<!-- Widget Link -->
+						<aside class="widget widget_link">
+							<h3 class="widget-title">{dede:type typeid='41'}[field:typename/]{/dede:type}</h3>
+							<ul>
+								{dede:channel type='son' row='50' typeid='41'}<li><a href="[field:typeurl/]" title="[field:typename/]">[field:typename/]</a></li>{/dede:channel} 
+							</ul>
+						</aside><!-- Widget Link /- -->
+					</div>
+					<div class="col-md-3 col-sm-6 col-xs-6">
+						<!-- Widget Link -->
+						<aside class="widget widget_link">
+							<h3 class="widget-title">{dede:type typeid='29'}[field:typename/]{/dede:type}</h3>
+							<ul>
+								{dede:channel type='son' row='50' typeid='29'}<li><a href="[field:typeurl/]" title="[field:typename/]">[field:typename/]</a></li>{/dede:channel} 
+							</ul>
+						</aside><!-- Widget Link /- -->
+					</div>
+					<div class="col-md-3 col-sm-6 col-xs-6">
+						<!-- Widget Link -->
+						<aside class="widget widget_link">
+							<h3 class="widget-title">{dede:type typeid='46'}[field:typename/]{/dede:type}</h3>
+							<ul>
+								{dede:type typeid='46'}<li><a href="[field:typeurl/]" title="[field:typename/]">[field:typename/]</a></li>{/dede:type} 
+							</ul>
+						</aside><!-- Widget Link /- -->
+					</div>
+					<div class="col-md-3 col-sm-6 col-xs-6">
+						<!-- Widget Link -->
+						<aside class="widget widget_link">
+							<h3 class="widget-title">网站信息</h3>
+							<ul id="webinfoC">
+								<li><a href="javascript:;" title="访问量">访问量:<span data-info="c">*</span></a></li>
+								<li><a href="javascript:;" title="最后访问">最后访问:<span data-info="t">*</span></a></li>
+								<li><a href="javascript:;" title="版本数量">版本数量:<span data-info="mir">*</span></a></li>
+								<li><a href="javascript:;" title="留言">留言:<span data-info="b">*</span></a></li>
+								<li><a href="javascript:;" title="文章">文章:<span data-info="a">*</span></a></li>
+								<li><a href="javascript:;" title="传奇工具">传奇工具:<span data-info="s">*</span></a></li>
+							</ul>
+						</aside><!-- Widget Link /- -->
+					</div>
+				</div>
+			</div><!-- Container /- -->
+			
+			<!-- Copyright -->
+			<div class="container-fluid no-padding copyright">
+				<p><i class="fa fa-copyright"></i> Copyright &copy; 2017.Company name All rights reserved.<a target="_self" href="{dede:global.cfg_basehost/}">{dede:global.gsjj/}</a>,<a target="_self" href="{dede:global.cfg_basehost/}">传奇一条龙</a></p>
+			</div><!-- Copyright /- -->
+		</footer><!-- Footer Section /- -->
+		
+	</div>
+	
+	<!-- JQuery v1.12.4 -->
+	<script src="{dede:global.cfg_templets_skin/}/js/jquery-1.12.4.min.js"></script>
+
+	<!-- Library - Js -->
+	<script src="{dede:global.cfg_templets_skin/}/libraries/lib.js"></script>
+	<script src="{dede:global.cfg_templets_skin/}/libraries/lightslider/lightslider.min.js"></script>
+	
+	<!-- RS5.0 Core JS Files -->
+	<script type="text/javascript" src="{dede:global.cfg_templets_skin/}/revolution/js/jquery.themepunch.tools.min.js?rev=5.0"></script>
+	<script type="text/javascript" src="{dede:global.cfg_templets_skin/}/revolution/js/jquery.themepunch.revolution.min.js?rev=5.0"></script>
+	<script type="text/javascript" src="{dede:global.cfg_templets_skin/}/revolution/js/extensions/revolution.extension.video.min.js"></script>
+	<script type="text/javascript" src="{dede:global.cfg_templets_skin/}/revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
+	<script type="text/javascript" src="{dede:global.cfg_templets_skin/}/revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
+	<script type="text/javascript" src="{dede:global.cfg_templets_skin/}/revolution/js/extensions/revolution.extension.navigation.min.js"></script>
+	<script src="{dede:global.cfg_templets_skin/}/js/functions.js"></script>
+
+	<script type="text/javascript">
+		//广告计算
+		$.get("/api.php?act=id_select_type",function(d){
+			try{
+				var j=$.parseJSON(d);
+				$("#id_select_type").attr({
+					'data-type':d
+				})
+			}catch(err){
+
+			}
+		});
+		$("#selectTaoCan").change(function(){
+			countAD();
+		});
+		$("#selectAd").change(function(){
+			countAD();
+		});
+		function countAD(ad_type){
+			if(!ad_type){
+				ad_type = 'th';
+			}
+			$("#selectAd").find("option[value='remove']").remove();
+			$("#selectAd").find("option:selected").attr("data-selected", '1');
+			var T = ToInt($("#selectTaoCan").val());
+			var adselected = $("#selectAd").find("option[data-selected='1']");
+			var A = 0;
+			var C = 0;
+			$(adselected).each(function(a,b){
+				try{
+					var j = $.parseJSON($(b).attr("data-result"));
+					C++;
+					A += ToInt(j[ad_type]);
+				}catch(e){
+
+				}
+				
+			})
+			$("#ad-result").html( C+"个广告" );
+			C = T+A;
+			$( "#slider-range" ).slider({
+				values:[0,C]
+			})
+			$("#amount2").html("￥" + C);
+		}
+
+		function ToInt(n){
+			var n = parseInt(n);
+			if(n!=n){
+				n = 0;
+			}
+			return n;
+		}
+		//网站统计
+		$.get("/api.php?act=c",function(d){
+			try{
+				var j=$.parseJSON(d);
+				for(var i in j){
+					$("#webinfoC").find("[data-info='"+i+"']").html(j[i]);
+				}
+			}catch(err){
+
+			}
+		});
+
+	</script>
+</body>
+</html>

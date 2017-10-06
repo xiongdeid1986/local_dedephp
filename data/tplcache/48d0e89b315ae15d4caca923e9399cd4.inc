@@ -1,0 +1,1 @@
+<li data-target="#carousel-testimonial" data-slide-to="[field:autoindex runphp='yes']@me=$GLOBALS['autoindex']-1;[/field:autoindex]" class="[field:global name=autoindex runphp="yes"](@me==1)? @me="active":@me="";[/field:global]"></li>

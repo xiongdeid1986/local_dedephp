@@ -1,0 +1,1 @@
+<div class="col-md-4 col-sm-6 col-xs-12 inventroy-box">							<img src="[field:litpic/]" alt="Inventory" />							<div class="inventroy-content">								<h3>[field:title]</h3>								<span>2016</span>								<span>300hp</span>								<span>automatic</span>								<h4>优惠价 <b>[field:price/]</b></h4>								<a href="#" title="Book now">book now</a>							</div>						</div>

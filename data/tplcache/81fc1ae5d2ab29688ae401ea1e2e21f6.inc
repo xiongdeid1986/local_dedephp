@@ -1,0 +1,1 @@
+<a href="[field:typeurl /]" target="_blank" title="[field:typename/]">查看更多游戏版本</a>

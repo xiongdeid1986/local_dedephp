@@ -1,0 +1,1 @@
+[field:global name=autoindex runphp='yes'](@me==4) @me="<</code>li class='on'></</code>li>";[/field:global]<li><a href="[field:typelink/]" title="homepage 1">[field:typename/] 1</a></li>

@@ -1,0 +1,51 @@
+{dede:include filename="head2.htm"/}
+
+<div id="aubodyfrm">
+{dede:include filename="left.htm"/}
+<div class="aupageright">
+
+	<div id="aubodypagefrm">
+
+	  <div style="padding:5px;border-bottom:1px solid #D8EAF8;">{dede:sql sql='Select content from dede_arctype where id=6'}[field:content/]{/dede:sql}</div>
+
+	</div>
+
+	<table style="background-color: rgb(216,234,248); margin: 5px 0px; width: 730px" id="aupagelist" border="0" cellspacing="1" cellpadding="4" align="center">
+
+	<tbody>
+
+	<tr bgcolor="#ffffff">
+
+	<td style="overflow-x: hidden; overflow-y: hidden; color: rgb(34,34,34); font-size: 13px" width="36%" align="center">
+
+	<img style="border-bottom-style: none; border-left-style: none; border-top-style: none; border-right-style: none" border="0" alt="" width="225" height="169" src="{dede:field.litpic/}" />
+
+	</td>
+
+	<td style="overflow-x: hidden; overflow-y: hidden; color: rgb(34,34,34); font-size: 13px" valign="top">
+
+	<div  class="goodname"> <b>{dede:field name='title'/}</b>        </div>
+
+	<div style="border-bottom: rgb(216,234,248) 1px dashed; padding-bottom: 6px; padding-left: 6px; padding-right: 6px; height: 15px; padding-top: 6px" class="goodprice">
+
+	<font color="#0066cc">商品价格：</font><font style="font-family: Georgia; color: rgb(255,0,0); font-size: 14px; font-weight: bold" class="sprice">{dede:field.price/}</font></div>
+
+	<div style="padding-bottom: 6px; line-height: 18px; padding-left: 6px; padding-right: 6px; padding-top: 6px;" class="brief">·品牌<a href='{dede:global.cfg_cmsurl/}/' target='_blank'>{dede:global.cfg_indexname/}</a>除主流产品外,同时又以精美的页面设计闻名业内</br>
+
+·当前游戏市场没有一款精美华丽的页面是很难在游戏业立足的</br>
+
+·页面为<a href='{dede:global.cfg_cmsurl/}/' target='_blank'>{dede:global.cfg_indexname/}</a>首席设计师制作,全静态html,访问速度快</br>
+·附带psd源文件+Logo字体,使用Photoshop工具打开后既自主修改</br>
+
+<font color=#0042FF>·注:页面模块不包括域名+空间</font> </div></td></tr></tbody></table>
+<div class="title_hod">                                <h3 class="bbxxjs">产品详细介绍</h3> 								<p class="tongyong_arc_cp">          {dede:field.body/} {dede:include filename="dyie.htm"/}         </p>		</div>
+
+	</div>
+
+	<div class="clear"></div>
+
+	</div>
+
+{dede:include filename="footer.htm"/}
+</body>
+</html>

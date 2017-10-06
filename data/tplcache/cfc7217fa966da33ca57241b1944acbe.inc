@@ -1,0 +1,1 @@
+<a href="[field:typeurl/]" title="[field:typename/]"><img src="[field:global.cfg_templets_skin/]/images/wel-ic-1.png" alt="[field:typename/]">[field:typename/]</a>

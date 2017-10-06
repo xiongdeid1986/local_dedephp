@@ -1,0 +1,1 @@
+<LI><A href="[field:arcurl/]" target=_blank ><img src="/Game/1/[field:id /]/x.jpg" title='[field:title/]' /></A> <DIV class="clatxt"><A href="[field:arcurl/]" target=_blank>[field:title/]</A></DIV></LI>
